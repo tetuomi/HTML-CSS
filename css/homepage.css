@@ -1,3 +1,10 @@
 .green {
-    color: red;
+    color: green;
+}
+.back_green {
+    background: green;
+}
+img {
+    display: block;
+    margin: auto;
 }
