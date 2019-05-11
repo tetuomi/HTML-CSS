@@ -4,12 +4,38 @@
     <meta charset = "utf-8">
     <title>First homepage</title>
     <link rel = "stylesheet" href = "../../css/homepage.css">
+    <script language = "JavaScript"><!--
+                                    function setTF(f0bj,vType){
+                                        fobj.style.visibility = vType;
+                                    }
+ //  --></script>
   </head>
   <body>
     <h1 class = "back_green"><center>初めてのホームページ作成</center></h1>
     <h2 class = "green">PLACTICE</h2>
-    <p>俳優の画像を貼ります！</p>
-    <h3><center>こんてつ</center></h3>
-      <img src = "../img/kontetsu.png" width = "70%" height = "60%">
+    <h3>俳優の画像を貼ります！<br></h3>
+    <h2><center>こんてつ</center></h2>
+    <img src = "../img/kontetsu.png" width = "70%" height = "60%"><br>
+    <h3>この頃のこんてつの基本情報</h3>
+    <ul>
+      <li>たぶん中２、中３くらい</li>
+      <li>学校の女子はみんな彼女</li>
+      <li>頭脳明晰</li>
+      <li>有智高才</li>
+    </ul>
+    <p>一説によると、帝国を築いたとか、築いてないとか...</p><br>
+    <h3>この頃のこんてつの好きな指ランキング</h3>
+    <ol>
+      <li>中指</li>
+      <li>人差し指</li>
+      <li>小指</li>
+    </ol><br>
+    <h3>tetuomiのgitのlink</h3>
+    <a href = "https://github.com/tetuomi">https://github.com/tetuomi</a>
+    <br><h3>絶対このボタン押すなよ!!</h3>
+    <form>
+    <input type = "button" value = "warning" onClick = "setTF(this.form.txtField1,'visible');"/>
+    <input type = "text" name = "txtField1" style = "visibility:hidden"><br>
+    </form>
   </body>
 </html>

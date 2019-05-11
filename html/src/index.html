@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name = "viewport" content = "initial-scale=1.0,user-
+                  scalable=no"/>
+    <meta charset = "utf-8" />
+    <title>safari + GPS</title>
+    <style type = "text/css"><!--
+     h1 { font-size:16pt; }
+     --></style>
+    <script type = "text/javascript"><!--
+                                     window.onload = function(){
+                                         navigator.geolocation.watchPosition(update);
+                                     }
+     //位置が検出されたら、表示
+     function update(position){
+         var lat = position.coords.latitude;
+         var lng = position.coords.longitude;
+         var acc = position.coords.accuracy;
+         document.getElementById("pos").innerHTML =
+          lat + "," + lng + "," + acc + "<br>" + (new Date());
+     }
+    </script>
+  </head>
+  <body>
+    <h1>現在の位置情報を表示</h1>
+    <div id = "pos">lat, lng, accuracy</div>
+  </body>
+</html>
