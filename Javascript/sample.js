@@ -16,3 +16,23 @@ function Scroll(){
     // clientHeight：ブラウザの高さ
     // window.scroll(水平方向,垂直方向)
 };
+function warning(){
+    document.bgColor="red";
+};
+
+function show_button(){
+    var div=document.getElementById("hit");
+    var state=div.style.display;
+    div.setAttribute("style","display:inline");
+};
+
+window.onload = function(){
+    var div=document.getElementById("hit");
+    var state=div.style.display;
+    div.setAttribute("style","display:none");
+};
+/*
+function hit_count(){
+    
+};
+*/
