@@ -41,5 +41,9 @@ function hit_count(){
 
 function show_result(){
     var box=document.getElementById("result");
-    box.innerHTML="あなたのクリックパワーは　"+count+" です。";
+    box.innerHTML="あなたのクリックパワーは　"+count+" です。<br>";
+
+    if(count>=25)box.innerHTML+="師匠と呼んでもいいですか？";
+    else if(count>=20)box.innerHTML+="テクニシャンにきみはなる!";
+    else{box.innerHTML+="見てられん";}
 };
