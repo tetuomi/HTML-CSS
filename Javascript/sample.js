@@ -26,7 +26,7 @@ function show_button(){
     div.setAttribute("style","display:inline");
 };
 
-window.onload = function(){
+function delete_button(){
     var div=document.getElementById("hit");
     var state=div.style.display;
     div.setAttribute("style","display:none");

@@ -9,10 +9,10 @@
   <body bgcolor="#00FF00">
     <h1 class="back_green"><center>あはん</center></h1>
     <hr>
-    <img src ="../img/kanojo.jpg" width="50%" height="40%"><br>
+    <img src ="../img/kosakana.jpg" width="50%" height="40%"><br>
     <center><h3>"スタート"を押して、"もっともっと"を連打してみてん</h3></center>
-    <center><input type="button" value="スタート" onclick="show_button();"></center>
-    <h1><center><input type="button" id="hit" value="もっともっと" onclick="hit_count();"></center></h1>
+    <center><input type="button" value="スタート" onclick="show_button();setTimeout('delete_button()',5000);"></center>
+    <h1><center><input type="button" id="hit" style="display:none;" value="もっともっと" onclick="hit_count();"></center></h1>
     <h4><center>見終わったら、押さんかい</center><h4>
       <center><input type="button" value="読破" onclick="OnLinkClick();Scroll();"></center><br>
       <center><p id="output"></p></center>
