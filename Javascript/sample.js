@@ -1,3 +1,5 @@
+var count=0;
+
 function OnLinkClick(){
     var time=new Date();
     var hour=time.getHours();
@@ -21,6 +23,7 @@ function warning(){
 };
 
 function show_button(){
+    count=0;
     var div=document.getElementById("hit");
     var state=div.style.display;
     div.setAttribute("style","display:inline");
@@ -31,8 +34,12 @@ function delete_button(){
     var state=div.style.display;
     div.setAttribute("style","display:none");
 };
-/*
+
 function hit_count(){
-    
+    count++
 };
-*/
+
+function show_result(){
+    var box=document.getElementById("result");
+    box.innerHTML="あなたのクリックパワーは　"+count+" です。";
+};
