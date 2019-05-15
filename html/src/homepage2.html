@@ -5,6 +5,10 @@
     <title>First homepage</title>
     <link rel="stylesheet" href="../../css/homepage.css">
     <script src="../../Javascript/sample.js"></script>
+    <script>
+     setInterval("show_time('clock');",60000)
+    </script>
+    <p style="text-align: right" id="clock"></p>
   </head>
   <body bgcolor="#00FF00">
     <h1 class="back_green"><center>あはん</center></h1>
@@ -14,12 +18,14 @@
     <center><input type="button" value="スタート" onclick="show_button();setTimeout('delete_button();show_result();',5000);"></center>
     <h1><center><input type="button" id="hit" style="display:none;" value="もっともっと" onclick="hit_count();"></center></h1>
     <h1><center><p id="result"></p></center></h1>
-    <center><form>
+    <center><form name="form1">
       <div>入力できるよ</div>
-      <textarea rows="1" cols="25"></textarea> <!-- rows="行数" cols="1行の文字数" -->
+      <textarea rows="1" name ="textarea1" cols="25" maxlength="25"></textarea> <!-- rows="行数" cols="1行の文字数" -->
     </form></center>
+    <center><input type="button" value="完了" onclick="show_text();"></center>
+    <center><p id="text"></p></center>
     <h4><center>見終わったら、押さんかい</center><h4>
-      <center><input type="button" value="読破" onclick="OnLinkClick();Scroll();"></center><br>
+      <center><input type="button" value="読破" onclick="show_time('output');Scroll();"></center><br>
       <center><p id="output"></p></center>
   </body>
 </html>
