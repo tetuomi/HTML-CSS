@@ -13,8 +13,8 @@
   <body bgcolor="#00FF00">
     <h1 class="back_green"><center>あはん</center></h1>
     <hr>
-    <h1 id="kosakana1" class="kosakana_L"></h1><!-- idの重複 -->
-    <h1 id="kosakana2" class="kosakana_R"></h1>
+    <span class="mgr"></span><h1 id="kosakana1" class="kosakana_L"></h1><!-- idの重複 -->
+    </span><h1 id="kosakana2" class="kosakana_R"></h1><span class="mgr">
     <img src ="../img/kosakana.jpg" width="50%" height="40%"><br>
     <center><h3>"スタート"を押して、"もっともっと"を連打してみてん</h3></center>
     <center><input type="button" value="スタート" onclick="show_button();setTimeout('delete_button();show_result();',5000);"></center>
@@ -26,8 +26,10 @@
     </form></center><!-- classのほうがいいと思います -->
     <center><input type="button" value="完了" onclick="show_text('kosakana1');show_text('kosakana2');"></center>
     <center><p id="text"></p></center>
-    <h4><center>見終わったら、押さんかい</center><h4>
-      <center><input type="button" value="読破" onclick="show_time('output');Scroll();"></center><br>
-      <center><p id="output"></p></center>
+    <h4><center>
+      <a href="homepage.html">1<span class="mgr"></span></a>
+      <a class="none">2<span class="mgr"></span></a>
+      <a href="homepage3.html">3<span class="mgr"></span></a>
+    </center></h4>
   </body>
 </html>

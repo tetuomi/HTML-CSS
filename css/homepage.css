@@ -6,12 +6,20 @@
     background: green;
 }
 
+.mgr {
+    margin: 20px;
+}
+
 .kosakana_L {
     float: left;
 }
 
 .kosakana_R {
     float: right;
+}
+
+.none {
+    text-decoration: none;
 }
 
 img {
