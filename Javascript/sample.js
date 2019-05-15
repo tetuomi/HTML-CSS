@@ -44,13 +44,13 @@ function delete_button(){
     div.setAttribute("style","display:none");
 };
 
-function show_text(){
+function show_text(id){
     var text=document.form1.textarea1.value;
-    document.getElementById("text").innerHTML=text+"と書き込みましたね♡";
+    document.getElementById(id).innerHTML+=text+"すぎる♡<br>";
 };
 
 function hit_count(){
-    count++
+    count++;
 };
 
 function show_result(){

@@ -1,9 +1,19 @@
 .green {
     color: green;
 }
+
 .back_green {
     background: green;
 }
+
+.kosakana_L {
+    float: left;
+}
+
+.kosakana_R {
+    float: right;
+}
+
 img {
     display: block;
     margin: auto;
