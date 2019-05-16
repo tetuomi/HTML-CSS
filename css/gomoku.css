@@ -6,25 +6,21 @@
 table {
     border-color: black;
     border: 10;
-    width: 500;
-    height: 500; 
+    width: 600;
+    height: 600; 
 }
 
 table, td, tr {
-    border: 2px #000000 solid; 
+    border: 3px #000000 solid; !important
 }
 
 .circle0 {
-    width: 30;
-    height: 30;
     border-radius: 50%;
     background: black;
     margin: auto;
 }
 
 .circle1 {
-    width: 30;
-    height: 30;
     border-radius: 50%;
     background: white;
     margin: auto;
