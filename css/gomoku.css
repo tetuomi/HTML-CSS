@@ -1,0 +1,15 @@
+.backgreen {
+    background: green;
+    padding: 30px;
+}
+
+table {
+    border-color: black;
+    border: 10;
+    width: 500;
+    height: 500;
+}
+
+table, td, tr {
+    border: 2px #000000 solid;
+}
