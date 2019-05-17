@@ -1,4 +1,6 @@
 var turn = 0; // 0:BLACK  1:WHITE
+const directions = new Array(-9,-8,1,10);
+
 document.write("<center><h1>");
 document.write("<center>");
 document.write("<table rules='all'>");
@@ -21,7 +23,6 @@ function getID(element) {
 }
 
 function length(element){
-    const directions = new Array(-9,-8,1,10);
     var position = document.getElementById(element.id);
     var Cname = position.className;
     var count = 0,max_count = 0,num_id = Number(position.id);
