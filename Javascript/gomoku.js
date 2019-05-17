@@ -14,8 +14,10 @@ function getID(element) {
     var id = element.id;
     var position = document.getElementById(id);
     console.log(position)
-    position.className = "circle" + turn;
-    turn ^= 1;
+    if(position.className == "none"){
+        position.className = "circle" + turn;
+        turn ^= 1;
+    }
 }
 
 function length(element){
@@ -49,6 +51,11 @@ function judge(connectted_stone){
     if(connectted_stone >= 5){
         var finish = document.getElementById("end");
         finish.innerHTML = ((turn^1)? "白石の勝ち!" : "黒石の勝ち!");
+        finish.innerHTML += "<br>相手が弱かったwww".strike();
+        for(var i = 0;i < 81;i++){
+            var board = document.getElementById(i);
+            board.onclick = "";
+        }
     }
 }
 
