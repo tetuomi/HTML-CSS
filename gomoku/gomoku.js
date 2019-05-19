@@ -1,17 +1,6 @@
 var turn = 0; // 0:BLACK  1:WHITE
 const directions = new Array(-9,-8,1,10);
 
-document.write("<center><h1>");
-document.write("<center>");
-document.write("<table rules='all'>");
-for(var i = 0;i < 81;i++){
-    if(i%9 == 0) document.write("<tr>");
-    document.write("<td bgcolor='#CC9966' class='none' id='",i,"' onclick='getID(this);judge(length(this));'></td>");
-    if(i%9 == 8) document.write("</tr>");
-}
-document.write("</table>");
-document.write("</center>");
-
 function getID(element) {
     var id = element.id;
     var position = document.getElementById(id);
@@ -59,5 +48,17 @@ function judge(connectted_stone){
         }
     }
 }
+document.write("<center><h1>");
+document.write("<center>");
+document.write("<table rules='all'>");
+for(var i = 0;i < 81;i++){
+    if(i%9 == 0) document.write("<tr>");
+    document.write("<td bgcolor='#CC9966' class='none' id='",i,"' onclick='getID(this);judge(length(this));'></td>");
+    if(i%9 == 8) document.write("</tr>");
+}
+document.write("</table>");
+document.write("</center>");
+
+
 
 
