@@ -40,7 +40,7 @@ function length(element){
 function judge(connectted_stone){
     if(connectted_stone >= 5){
         var finish = document.getElementById("end");
-        finish.innerHTML = ((turn^1)? "白石の勝ち!" : "黒石の勝ち!");
+        finish.innerHTML = (turn^1)? "白石の勝ち!" : "黒石の勝ち!";
         finish.innerHTML += "<br>相手が弱かったwww".strike();
         for(var i = 0;i < 81;i++){
             var board = document.getElementById(i);
@@ -48,17 +48,18 @@ function judge(connectted_stone){
         }
     }
 }
-document.write("<center><h1>");
-document.write("<center>");
-document.write("<table rules='all'>");
+var table = document.getElementById("table");
+var element = "";
 for(var i = 0;i < 81;i++){
-    if(i%9 == 0) document.write("<tr>");
-    document.write("<td bgcolor='#CC9966' class='none' id='",i,"' onclick='getID(this);judge(length(this));'></td>");
-    if(i%9 == 8) document.write("</tr>");
+    if(i%9 == 0){
+        element += "<tr>";
+        console.log(i);
+    }
+    element += "<td bgcolor='#CC9966' class='none' id='"
+        + i + "' onclick='getID(this);judge(length(this));'></td>";
+    if(i%9 == 8){
+        element += "</tr>";
+        console.log(i);
+    }
 }
-document.write("</table>");
-document.write("</center>");
-
-
-
-
+table.innerHTML += element;
