@@ -48,6 +48,7 @@ function judge(connectted_stone){
         }
     }
 }
+/*
 var table = document.getElementById("table");
 var element = "";
 for(var i = 0;i < 81;i++){
@@ -63,3 +64,4 @@ for(var i = 0;i < 81;i++){
     }
 }
 table.innerHTML += element;
+*/
